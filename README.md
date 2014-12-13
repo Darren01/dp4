@@ -89,7 +89,9 @@ table2
 
 ### Columns calc.15a, calc.15b, and c13.exp
 
-The authors of the paper have chosen compounds **15a** and **15b** (see original paper's [supplemental details](http://pubs.acs.org/doi/suppl/10.1021/ja105035r/suppl_file/ja105035r_si_001.pdf) for details of the structures) to illustrate the calculation.  The carbon-13 chemical shifts of the two proposed structures were calculated and reported as was the carbon-13 chemical shifts (of compund 15a).  
+The authors of the paper have chosen compounds **15a** and **15b** (see original paper's [supplemental details](http://pubs.acs.org/doi/suppl/10.1021/ja105035r/suppl_file/ja105035r_si_001.pdf) for details of the structures) to illustrate the calculation.  The carbon-13 chemical shifts of the two proposed structures were calculated and reported as was the carbon-13 chemical shifts (of compound 15a). 
+
+![Figure 1](./fig1.png "Figure 1")   
 
 ### Scaled Shifts: columns scaled.15a and scaled.15b _vs_ Scaled.15a and Scaled.15b
 
