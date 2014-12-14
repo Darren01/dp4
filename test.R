@@ -33,6 +33,13 @@ table2  <- data.frame(position,calc.15a,calc.15b,c13.exp,scaled.15a,scaled.15b,c
 fit.15a  <- lm(calc.15a ~ c13.exp, data=table2)
 fit.15b  <- lm(calc.15b ~ c13.exp, data=table2)
 
+opar  <- par(mfrow=c(1,2))
+plot(calc.15a ~ c13.exp, data=table2)
+abline(fit.15a,col="red")
+plot(calc.15b ~ c13.exp, data=table2)
+abline(fit.15b,col="red")
+par(opar)
+
 d.calc  <- function(x,y,z) {a  <- (x - y)/z
                  # x = calc; y = intercept; z = slope
                  return(a)}
@@ -50,5 +57,5 @@ prob  <- function(x,sigma=2.306,nu=11.38) {
 Prob.15a  <- prob(Corr.15a)
 Prob.15b  <- prob(Corr.15b)
 
-prod(Prob.15a)/(prod(Prob.15a)+prod(Prob.15b))
-prod(Prob.15b)/(prod(Prob.15a)+prod(Prob.15b))
+100*prod(Prob.15a)/(prod(Prob.15a)+prod(Prob.15b))
+100*prod(Prob.15b)/(prod(Prob.15a)+prod(Prob.15b))

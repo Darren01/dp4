@@ -167,3 +167,19 @@ The products of these probabilities can be summed and the percentage of each of 
 These values compare favourably with those reported in the paper, 77.9 _vs_ 79.5%.  
 
 ### Discrepancies
+
+*The scaled chemical shifts reported in Table 2 and those calculated don't match and hence nor do the subsequent columns in the table.
+*The results reported and calculated are not the same (but very close).
+*The corrected errors within the table do not tally.
+
+Code for producing data to be tested in the [applet](http://www-jmg.ch.cam.ac.uk/tools/nmr/DP4/),
+
+```{r}
+paste0("C",table2[,1],collapse=",")
+paste0(table2[,2],collapse=",")
+paste0(table2[,3]),collapse=",")
+
+paste(table2[,4],collapse=",","(",paste0("C",table2[,1]),")",sep="")
+```
+
+*The output from the applet does not tally with that reported in the paper (nor the calculation).
